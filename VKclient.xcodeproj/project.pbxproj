@@ -20,6 +20,8 @@
 		1F16844F29C0824100077AC6 /* FrendsListController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16844E29C0824100077AC6 /* FrendsListController+Delegate.swift */; };
 		1F16845129C0834500077AC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16845029C0834500077AC6 /* Constants.swift */; };
 		1FBE629B29C1A8A90085464A /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE629A29C1A8A90085464A /* AllGroupsController.swift */; };
+		1FBE629E29C1AE850085464A /* MyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE629D29C1AE850085464A /* MyGroupsController.swift */; };
+		1FBE62A029C1F1C80085464A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE629F29C1F1C80085464A /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1F16844E29C0824100077AC6 /* FrendsListController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FrendsListController+Delegate.swift"; sourceTree = "<group>"; };
 		1F16845029C0834500077AC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FBE629A29C1A8A90085464A /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
+		1FBE629D29C1AE850085464A /* MyGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsController.swift; sourceTree = "<group>"; };
+		1FBE629F29C1F1C80085464A /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				1F16842A29C03EA700077AC6 /* AppDelegate.swift */,
+				1FBE629F29C1F1C80085464A /* Storage.swift */,
 				1F16842C29C03EA700077AC6 /* SceneDelegate.swift */,
 				1F16845029C0834500077AC6 /* Constants.swift */,
 				1F16844329C073EA00077AC6 /* Cell */,
@@ -87,6 +92,7 @@
 		1F16844029C0735000077AC6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE629C29C1AE540085464A /* MyGroupsController */,
 				1FBE629929C1A7E20085464A /* AllGroupsControllers */,
 				1F16844129C0737D00077AC6 /* FrendsListControllers */,
 			);
@@ -126,6 +132,14 @@
 				1FBE629A29C1A8A90085464A /* AllGroupsController.swift */,
 			);
 			path = AllGroupsControllers;
+			sourceTree = "<group>";
+		};
+		1FBE629C29C1AE540085464A /* MyGroupsController */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE629D29C1AE850085464A /* MyGroupsController.swift */,
+			);
+			path = MyGroupsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,12 +215,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F16844F29C0824100077AC6 /* FrendsListController+Delegate.swift in Sources */,
+				1FBE62A029C1F1C80085464A /* Storage.swift in Sources */,
 				1F16844D29C0813D00077AC6 /* FrendsList+DataSourse.swift in Sources */,
 				1F16842F29C03EA700077AC6 /* ViewController.swift in Sources */,
 				1F16844829C0748E00077AC6 /* UniversalTableViewCell.swift in Sources */,
 				1F16842B29C03EA700077AC6 /* AppDelegate.swift in Sources */,
 				1F16842D29C03EA700077AC6 /* SceneDelegate.swift in Sources */,
 				1FBE629B29C1A8A90085464A /* AllGroupsController.swift in Sources */,
+				1FBE629E29C1AE850085464A /* MyGroupsController.swift in Sources */,
 				1F16843F29C072A700077AC6 /* FrendsListController.swift in Sources */,
 				1F16845129C0834500077AC6 /* Constants.swift in Sources */,
 			);

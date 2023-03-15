@@ -12,7 +12,6 @@ class FrendsListController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let reuseindetifierUniversalTableViewCell = "reuseindetifierUniversalTableViewCell"
-    
     let friends = ["In", "Yn", "Vin", "Chun"]
     
     override func viewDidLoad() {

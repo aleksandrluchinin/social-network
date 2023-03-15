@@ -96,12 +96,24 @@
         <!--My Groups-->
         <scene sceneID="mJx-yB-OFA">
             <objects>
-                <viewController id="iX9-ve-HWu" sceneMemberID="viewController">
+                <viewController id="iX9-ve-HWu" customClass="MyGroupsController" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugq-Ef-2xo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kfo-PL-q3X">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VSM-Ab-5aW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VSM-Ab-5aW" firstAttribute="bottom" secondItem="kfo-PL-q3X" secondAttribute="bottom" id="1Z6-Dn-xeL"/>
+                            <constraint firstItem="VSM-Ab-5aW" firstAttribute="trailing" secondItem="kfo-PL-q3X" secondAttribute="trailing" id="7BG-VP-JKA"/>
+                            <constraint firstItem="kfo-PL-q3X" firstAttribute="top" secondItem="VSM-Ab-5aW" secondAttribute="top" id="Nq0-Tv-Tk3"/>
+                            <constraint firstItem="kfo-PL-q3X" firstAttribute="leading" secondItem="VSM-Ab-5aW" secondAttribute="leading" id="npV-Aw-Ka0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Groups" id="WrK-10-Jfz">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="CCH-3e-NlQ">
@@ -110,6 +122,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="kfo-PL-q3X" id="oAY-pZ-6mE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOk-At-pIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
